@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetailViewController">
+            <connections>
+                <outlet property="bigScrollView" destination="ojJ-60-9AO" id="zat-zg-2wq"/>
+                <outlet property="contentWebView" destination="Xtg-1h-WBn" id="oqa-dO-I7B"/>
+                <outlet property="imgSourceLab" destination="sQW-OJ-b6M" id="Zif-Tv-gnH"/>
+                <outlet property="imgView" destination="dAE-sY-3rQ" id="1F6-cx-2nn"/>
+                <outlet property="titleLab" destination="xQn-E6-yzL" id="N9I-qd-MMk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojJ-60-9AO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usF-LR-X2b">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="933.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars.png" translatesAutoresizingMaskIntoConstraints="NO" id="dAE-sY-3rQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="266.5"/>
+                                </imageView>
+                                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtg-1h-WBn">
+                                    <rect key="frame" x="0.0" y="266.5" width="375" height="667"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                </webView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQn-E6-yzL">
+                                    <rect key="frame" x="19" y="186.5" width="337.5" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="JSu-h1-xZq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQW-OJ-b6M">
+                                    <rect key="frame" x="205" y="246.5" width="150" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="Cu9-ID-ioz"/>
+                                        <constraint firstAttribute="width" constant="150" id="Xk9-or-MSj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Xtg-1h-WBn" firstAttribute="top" secondItem="dAE-sY-3rQ" secondAttribute="bottom" id="0UY-Ya-axz"/>
+                                <constraint firstAttribute="bottom" secondItem="Xtg-1h-WBn" secondAttribute="bottom" id="G1A-7e-8Y9"/>
+                                <constraint firstAttribute="trailing" secondItem="Xtg-1h-WBn" secondAttribute="trailing" id="OdR-40-Lhv"/>
+                                <constraint firstItem="xQn-E6-yzL" firstAttribute="centerX" secondItem="dAE-sY-3rQ" secondAttribute="centerX" id="Seb-Xo-Oeb"/>
+                                <constraint firstItem="sQW-OJ-b6M" firstAttribute="bottom" secondItem="dAE-sY-3rQ" secondAttribute="bottom" constant="-5" id="ZVH-3Z-NCA"/>
+                                <constraint firstItem="dAE-sY-3rQ" firstAttribute="top" secondItem="usF-LR-X2b" secondAttribute="top" id="aTt-hB-aSO"/>
+                                <constraint firstItem="xQn-E6-yzL" firstAttribute="bottom" secondItem="dAE-sY-3rQ" secondAttribute="bottom" constant="-30" id="fkb-nK-Y02"/>
+                                <constraint firstItem="Xtg-1h-WBn" firstAttribute="leading" secondItem="usF-LR-X2b" secondAttribute="leading" id="i4o-Vg-naw"/>
+                                <constraint firstItem="sQW-OJ-b6M" firstAttribute="leading" secondItem="dAE-sY-3rQ" secondAttribute="trailing" constant="-170" id="nhv-sP-gvi"/>
+                                <constraint firstAttribute="trailing" secondItem="dAE-sY-3rQ" secondAttribute="trailing" id="p0p-r5-o6s"/>
+                                <constraint firstItem="xQn-E6-yzL" firstAttribute="width" secondItem="dAE-sY-3rQ" secondAttribute="width" multiplier="0.9" id="qKs-H2-zFy"/>
+                                <constraint firstItem="dAE-sY-3rQ" firstAttribute="leading" secondItem="usF-LR-X2b" secondAttribute="leading" id="x3K-3l-PeD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="usF-LR-X2b" secondAttribute="bottom" id="6Wh-iA-gAF"/>
+                        <constraint firstItem="dAE-sY-3rQ" firstAttribute="height" secondItem="ojJ-60-9AO" secondAttribute="height" multiplier="0.4" id="7es-bV-Rx6"/>
+                        <constraint firstItem="usF-LR-X2b" firstAttribute="leading" secondItem="ojJ-60-9AO" secondAttribute="leading" id="AeG-B4-Kr0"/>
+                        <constraint firstAttribute="trailing" secondItem="usF-LR-X2b" secondAttribute="trailing" id="HIE-ir-iRe"/>
+                        <constraint firstItem="usF-LR-X2b" firstAttribute="height" secondItem="ojJ-60-9AO" secondAttribute="height" multiplier="1.4" id="fIP-Nc-y7C"/>
+                        <constraint firstItem="usF-LR-X2b" firstAttribute="width" secondItem="ojJ-60-9AO" secondAttribute="width" id="g7A-vD-zLs"/>
+                        <constraint firstItem="usF-LR-X2b" firstAttribute="top" secondItem="ojJ-60-9AO" secondAttribute="top" id="kFA-l2-Ud1"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ojJ-60-9AO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KOC-Fv-QNz"/>
+                <constraint firstItem="ojJ-60-9AO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ODI-Gi-7OW"/>
+                <constraint firstAttribute="trailing" secondItem="ojJ-60-9AO" secondAttribute="trailing" id="UKM-ce-2tb"/>
+                <constraint firstAttribute="bottom" secondItem="ojJ-60-9AO" secondAttribute="bottom" id="YHK-KG-4vj"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="257.5" y="341.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Stars.png" width="320" height="568"/>
+    </resources>
+</document>
